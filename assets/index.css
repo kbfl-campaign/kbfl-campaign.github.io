@@ -12,14 +12,14 @@ body{
 }
 h1 {
   font-weight: 200;
-  font-size:48px;
+  font-size:72px;
   margin-top: 8rem;
   margin-bottom: 8rem;
   color: #666;
 }
 @media (max-width: 768px) {
   h1 {
-    font-size:42px;
+    font-size:36px;
   }
 }
 .btn-lg {
