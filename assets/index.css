@@ -24,6 +24,7 @@ h1 {
 }
 .btn-lg {
   border-radius: 0;
+  margin: 5px;
 }
 
 /* common element */
