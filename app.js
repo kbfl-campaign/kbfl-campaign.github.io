@@ -384,7 +384,7 @@ voterRegistration.sendSign = function(){
 // convert output canvas to png data url
 voterRegistration.updateImgLink = function(){
 	if (voterRegistration.data.optin) {
-		$("<img src='https://www.google-analytics.com/collect?v=1&t=event&tid=UA-72771086-1&cid=force-anonymous-client-id&ec=Form&ea=Download&ni=1'>").appendTo("body");
+		$("<img src='https://www.google-analytics.com/collect?v=1&t=event&tid=UA-96107391-1&cid=force-anonymous-client-id&ec=Form&ea=Download&ni=1'>").appendTo("body");
 		voterRegistration.data.optin=false;
 	}
 	var dataURL = voterRegistration.canvas.toDataURL("image/png");
