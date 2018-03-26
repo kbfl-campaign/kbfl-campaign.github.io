@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2017 選民登記行動</title>
+  <title>選民登記填表工具 by 鍵盤戰線</title>
   <link rel="canonical" href="https://kbfl-campaign.github.io/app.html" />
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <script src="jquery.min.js"></script>
@@ -25,7 +25,7 @@
       </button>
       <a class="navbar-brand" href="./">
         <img src="assets/nav-logo.png" alt="Nav Logo" height="50" width="58" class="navbar-brand-logo"></img>
-        <span class="navbar-brand-text">我是方丈選民登記</span>
+        <span class="navbar-brand-text">選民登記填表工具 by 鍵盤戰線</span>
       </a>
     </div><!-- /.navbar-header -->
     <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -50,7 +50,7 @@
       <div class="step step-0 row">
         <div class="col-sm-8">
           <h3>零、成效統計</h3>
-          <p>你同意提供你透過「我是方丈 選民登記」網站下載選民登記表格次數的匿名數據，幫助鍵盤戰線統計是次活動的成效及改善系統設計嗎？</p>
+          <p>你同意提供你透過「選民登記填表工具 by 鍵盤戰線」下載選民登記表格次數的匿名數據，幫助 鍵盤戰線 統計是次活動的成效及改善系統設計嗎？</p>
           <div class="form-inline" id="optin">
             <div class="btn-group optin" data-toggle="buttons">
               <label class="btn btn-default">
@@ -59,7 +59,7 @@
               </label>
               <label class="btn btn-default">
                 <input type="radio" name="optin" id="optin-decline" class="radio-button optin-button" autocomplete="off">
-                吓？唔使喇！
+                我拒絕。
               </label>
             </div>
             <p><button type="button" class="btn btn-primary nextButton">下一步</button></p>
@@ -82,28 +82,6 @@
               <input class="form-control name-zh" id="name-zh" type="text" placeholder="王一心" maxlength="6" autocomplete="off">
             </div>
           </div><!-- /.name-zh-form -->
-          <p>請核對身份證上的中文電碼，如果有錯，請自行修改。</p>
-          <div class="form-inline name-telecode-form" id="name-telecode">
-            <div class="form-group">
-              <input class="form-control name-telecode" id="name-telecode-0" type="text" maxlength="4" autocomplete="off">
-            </div>
-            <div class="form-group">
-              <input class="form-control name-telecode" style="display: none;" id="name-telecode-1" type="text" maxlength="4" autocomplete="off">
-            </div>
-            <div class="form-group">
-              <input class="form-control name-telecode" style="display: none;" id="name-telecode-2" type="text" maxlength="4" autocomplete="off">
-            </div>
-            <div class="form-group">
-              <input class="form-control name-telecode" style="display: none;" id="name-telecode-3" type="text" maxlength="4" autocomplete="off">
-            </div>
-            <div class="form-group">
-              <input class="form-control name-telecode" style="display: none;" id="name-telecode-4" type="text" maxlength="4" autocomplete="off">
-            </div>
-            <div class="form-group">
-              <input class="form-control name-telecode" style="display: none;" id="name-telecode-5" type="text" maxlength="4" autocomplete="off">
-            </div>
-          </div><!-- /.form-inline.name-telecode-form" -->
-          <p class="redtape">中文電碼有錯嗎? 請<a href="https://docs.google.com/forms/d/1aQiNJJKD8n8fzxsj6q-BHLSLYLSagFhqSx8Xfnwu_9E/viewform">協助我們修正對照表</a>。</p>
         </div><!-- /.col-sm-6 -->
         <div class="col-sm-4">
           <img src="assets/id-zh.png" class="img-responsive" alt="Illustration">
@@ -122,11 +100,11 @@
             <div class="form-group">
               <p class="redtape">本人在香港身分證所載的姓名</p>
               <label class="control-label" for="name-en-surname">英文姓氏</label>
-              <input class="form-control name-en" id="name-en-surname" type="text" placeholder="WONG" maxlength="28" autocomplete="off">
+              <input class="form-control name-en" id="name-en-surname" type="text" placeholder="WONG" maxlength="29" autocomplete="off">
             </div>
             <div class="form-group">
               <label class="control-label" for="name-en-othername">英文名字</label>
-              <input class="form-control name-en" id="name-en-othername" type="text" placeholder="Yat Sum" maxlength="28" autocomplete="off">
+              <input class="form-control name-en" id="name-en-othername" type="text" placeholder="Yat Sum" maxlength="29" autocomplete="off">
             </div>
           </div>
         </div><!-- /.col-sm-6 -->
@@ -179,7 +157,7 @@
       <div class="step step-4 row">
         <div id="address-form" class="address-form">
           <div class="col-sm-12">
-            <h3>四、 請填寫新的住址</h3>
+            <h3>四、 填住址</h3>
             <p class="redtape">本人在香港的住址</p>
           </div><!-- /.col-sm-12 -->
           <div class="col-sm-4 col-md-3">
@@ -215,7 +193,7 @@
             </div>
             <div class="form-group">
               <label class="control-label" for="address-line3">地區及分區名稱 Area and District Name</label>
-              <input class="form-control" id="address-line3" type="text" maxlength="28" autocomplete="off">
+              <input class="form-control" id="address-line3" type="text" maxlength="18" autocomplete="off">
             </div>
           </div><!-- /.col-sm-9 -->
         </div><!-- /.address-form -->
@@ -272,35 +250,8 @@
             </div>
           </div><!-- /.col-sm-9 -->
           <div class="col-sm-9">
-            <p>區議會（第二）功能界別 (即超級區議會)</p>
-            <div class="btn-group extra-dc-group" data-toggle="buttons">
-              <label class="btn btn-default extra-dc-btn active">
-                <input type="radio" name="extra-dc" id="dc-yes-new" class="radio-button extra-dc" autocomplete="off" checked>
-                <span class="btn-text"><span class="glyphicon glyphicon-ok text-primary" aria-hidden="true"></span> 我是新登記選民，並選擇登記為區議會（第二）功能界別選民</span>
-              </label>
-              <label class="btn btn-default extra-dc-btn">
-                <input type="radio" name="extra-dc" id="dc-yes-exist" class="radio-button extra-dc" autocomplete="off">
-                <span class="btn-text"><span class="glyphicon glyphicon-ok text-primary" aria-hidden="true"></span> 我是已登記選民，並選擇繼續登記為區議會（第二）功能界別選民</span>
-              </label>
-              <label class="btn btn-default extra-dc-btn">
-                <input type="radio" name="extra-dc" id="dc-no-new" class="radio-button extra-dc" autocomplete="off">
-                <span class="btn-text"><span class="glyphicon glyphicon-remove text-primary" aria-hidden="true"></span> 我是新登記選民，我拒絕登記為區議會（第二）功能界別選民</span>
-              </label>
-              <label class="btn btn-default extra-dc-btn">
-                <input type="radio" name="extra-dc" id="dc-no-exist" class="radio-button extra-dc" autocomplete="off">
-                <span class="btn-text"><span class="glyphicon glyphicon-remove text-primary" aria-hidden="true"></span> 我是已登記選民，我拒絕成為區議會（第二）功能界別選民</span>
-              </label>
-              <label class="btn btn-default extra-dc-btn">
-                <input type="radio" name="extra-dc" id="dc-fc" class="radio-button extra-dc" autocomplete="off">
-                <span class="btn-text"><span class="glyphicon glyphicon-minus text-primary" aria-hidden="true"></span> 我是其他功能界別的選民，此項不適用</span>
-              </label>
-            </div>
-          </div><!-- /.col-sm-9 -->
-          <div class="col-sm-9">
-            <p class="redtape">(a) 如果你申請登記成為地方選區選民，你可同時申請登記於區議會（第二）功能界別。請你在第 5 部分的適當方格內填上剔號，選擇你是否希望登記為區議會（第二）功能界別的選民。請注意，如果你不填寫第 5 部分，或你的選擇多於一項，選舉事務處會當作為你選擇登記為區議會（第二）功能界別的選民。</p>
-            <p class="redtape">(b) 如果你是一個已登記的地方選區選民（並未有登記於任何功能界別），而你不希望登記為區議會（第二）功能界別的選民，請在第5部分的適當方格內填上剔號。</p>
-            <p class="redtape">(c) 如果你是一個已登記的選民，而你現在希望由其他的功能界別轉換為區議會（第二）功能界別，你必須填寫「功能界別選民及選舉委員會界別分組投票人個人登記／更改
-              登記資料申請表」的申請表格（ REO-41）。選舉事務處並不會根據你在第5部分所填寫的資料轉換你的功能界別。</p>
+            <p>超級區議會</p>
+            <p>新登記選民將自動成為區議會（第二）功能界別選民，如果你有意登記成為其他功能組別選民，請自行遞交REO-43表格。</p>
           </div><!-- /.col-sm-9 -->
           <div class="col-sm-12">
             <p><button type="button" class="btn btn-primary nextButton">核對資料 (未完成，需要簽名並上載)</button></p>
@@ -325,20 +276,16 @@
           <h3>七、核對資料</h3>
           <div class="alert alert-success" role="alert"><p>請核對資料，並留意表格上的注意事項及聲明。</p></div>
           <canvas id="output-canvas"></canvas>
-          <img id="source-img" src="reo-1.png" style="display:none;" alt="source image loader">
+          <img id="source-img" src="reo-1.png?20180327" style="display:none;" alt="source image loader">
           <!--<p>請核對以上資料，並留意表格上的注意事項及聲明，然後選擇遞交方式。</p>-->
         </div>
         <div class="col-sm-9">
-          <h3>六、到選舉事務處網站上載表格</h3>
+          <h3>六、簽署及遞交表格</h3>
           <p class="redtape">
             本人謹此聲明表格上所填報詳情均屬真實及正確，及<br>
-            I declare that the particulars entered in this form are true and accurate, and that<br>
             (a) 上述住址是本人在香港的唯一或主要居所；及<br>
-            The residential address entered above is the address of my only or principal residence in Hong Kong; and<br>
             (b) 本人符合登記成為地方選區選民的資格﹝附註 5﹞；及<br>
-            I am eligible to be registered as an elector in a geographical constituency (Note 5); and<br>
             (c) 本人並沒有喪失登記為選民的資格﹝附註 6﹞。<br>
-            I am not subject to any disqualification from registration (Note 6).
           </p>
           <p>簽名 Signature :</p>
           <canvas id="sign-area"></canvas>
@@ -346,15 +293,15 @@
           <div class="downloadAreaContainer"><img id="downloadArea" width="320" hright="200"></img></div>
           <p>
             <a class="btn btn-lg btn-default downloadButton" id="downloadButton" download="Completed REO Form.png">1. 下載檔案</a>
-            <a class="btn btn-lg btn-primary uploadPrimary" href="https://www.reo-form.gov.hk/eto/ch/upload_form.jsp" target="_blank">2. 再上載至選舉事務處網站</a>
+            <a class="btn btn-lg btn-primary uploadPrimary" href="https://www.reo-form.gov.hk/eto/ch/upload_form_reo1.jsp" target="_blank">2. 再上載至選舉事務處網站</a>
           </p>
           <p>下載檔案後，開啟選舉事務處網站。你要選擇<br>上載<span class="text-primary">Completed REO Form.png</span>、<wbr>選取「我已簽署電子登記表格」、塡寫驗證碼、再按傳送。</p>
           <p class="text-primary">如無法連接選舉事務處上載平台，請發送表格至選舉事務處電郵： form@reo.gov.hk</p>
-          <p>
+          <!--<p>
             <a class="btn btn-primary uploadPrimary" href="mailto:form@reo.gov.hk?subject=Voter+Registration+REO-1+Submission&body=%E7%B7%8A%E8%A8%98%E4%BD%A0%E8%A6%81%E5%85%88%E4%B8%8B%E8%BC%89%E4%BD%A0%E7%9A%84%E9%81%B8%E6%B0%91%E7%99%BB%E8%A8%98%E8%A1%A8%E6%A0%BC%EF%BC%8C%E5%8A%A0%E5%85%A5%E9%99%84%E4%BB%B6%E5%86%8D%E7%99%BC%E9%80%81%E7%B5%A6%E9%81%B8%E8%88%89%E4%BA%8B%E5%8B%99%E8%99%95%E3%80%82%20Don%27t%20forget%20you%20need%20to%20download%2C%20attach%20and%20send%20your%20form%20to%20the%20Registration%20and%20Electoral%20Office.">開啟 Email App (iOS, Android)</a>
             - 或 -
             <a class="btn btn-primary uploadPrimary" href="https://mail.google.com/mail/u/0/?view=cm&ui=2&tf=0&fs=1&to=form@reo.gov.hk&su=Voter+Registration+REO-1+Submission&body=%E7%B7%8A%E8%A8%98%E4%BD%A0%E8%A6%81%E5%85%88%E4%B8%8B%E8%BC%89%E4%BD%A0%E7%9A%84%E9%81%B8%E6%B0%91%E7%99%BB%E8%A8%98%E8%A1%A8%E6%A0%BC%EF%BC%8C%E5%8A%A0%E5%85%A5%E9%99%84%E4%BB%B6%E5%86%8D%E7%99%BC%E9%80%81%E7%B5%A6%E9%81%B8%E8%88%89%E4%BA%8B%E5%8B%99%E8%99%95%E3%80%82%20Don%27t%20forget%20you%20need%20to%20download%2C%20attach%20and%20send%20your%20form%20to%20the%20Registration%20and%20Electoral%20Office." target="_blank">開啟網頁版 Gmail (請先登入)</a>
-          </p>
+          </p>-->
           <p>如你在遞交表格 14 天後，仍未收到選舉事務處的通知，你可致電該處查詢熱線 2891 1001，查詢有關申請的進展。</p>
           <h3>Like 鍵盤戰線 on Facebook</h3>
           <p>
@@ -428,6 +375,6 @@
   </div>
 </footer>
 <script async src="bootstrap/js/bootstrap.min.js"></script>
-<script async src="app-address-change.js"></script>
+<script async src="app.js"></script>
 </body>
 </html>
