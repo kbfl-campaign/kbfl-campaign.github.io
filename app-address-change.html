@@ -8,7 +8,7 @@
   <script src="jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet">
   <link href="bootstrap/css/bootstrap-app.min.css" rel="stylesheet">
-  <link href="assets/app.css" rel="stylesheet">
+  <link href="assets/app-address-change.css" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.png" />
   <meta name="theme-color" content="#c91f37">
   <meta name="robots" content="noindex">
@@ -71,6 +71,19 @@
       </div><!-- /.step.step-0.current-step.row -->
 
       <div class="step step-1 row">
+        <div class="col-sm-8">
+          <h3>零、住址證明</h3>
+          <p>選民登記更改地址需提交地址證明，請先準備好清楚掃描或拍攝的地址證明。</p>
+        </div><!-- /.col-sm-6 -->
+        <div class="col-sm-4">
+          <img src="assets/address-proof.png" class="img-responsive" alt="Illustration">
+        </div><!-- /.col-sm-6 -->
+        <div class="col-sm-12">
+          <p><button type="button" class="btn btn-primary nextButton">下一步</button></p>
+        </div><!-- /.col-sm-12 -->
+      </div><!-- /.step.step-0.current-step.row -->
+
+      <div class="step step-2 row">
         <div class="col-sm-12">
           <h3>一、首先，要填中文名，你叫咩名呢?</h3>
         </div><!-- /.col-sm-12 -->
@@ -89,9 +102,9 @@
         <div class="col-sm-12">
           <p><button type="button" class="btn btn-primary nextButton">下一步</button></p>
         </div><!-- /.col-sm-12 -->
-      </div><!-- /.step.step-1.next-steps.row -->
+      </div><!-- /.step.step-2.next-steps.row -->
 
-      <div class="step step-2 row">
+      <div class="step step-3 row">
         <div class="col-sm-12">
           <h3>二、英文名呢?</h3>
         </div><!-- /.col-sm-12 -->
@@ -114,9 +127,9 @@
         <div class="col-sm-12">
           <p><button type="button" class="btn btn-primary nextButton">下一步</button></p>
         </div><!-- /.col-sm-12 -->
-      </div><!-- /.step.step-2.next-steps.row -->
+      </div><!-- /.step.step-3.next-steps.row -->
 
-      <div class="step step-3 row">
+      <div class="step step-4 row">
         <div class="col-sm-12">
           <h3>三、 填埋身份證上嘅其他資料吖~</h3>
         </div><!-- /.col-sm-12 -->
@@ -154,7 +167,7 @@
         </div><!-- /.col-sm-12 -->
       </div>
 
-      <div class="step step-4 row">
+      <div class="step step-5 row">
         <div id="address-form" class="address-form">
           <div class="col-sm-12">
             <h3>四、 填住址</h3>
@@ -206,7 +219,7 @@
         </div><!-- /.col-sm-12 -->
       </div>
 
-      <div class="step step-5 row">
+      <div class="step step-6 row">
         <div id="extra-form">
           <div class="col-sm-12">
             <h3>五、 聯絡資料及選項</h3>
@@ -251,7 +264,13 @@
           </div><!-- /.col-sm-9 -->
           <div class="col-sm-9">
             <p>超級區議會</p>
-            <p>新登記選民將自動成為區議會（第二）功能界別選民，如果你有意登記成為其他功能組別選民，請自行遞交REO-43表格。</p>
+            <p class="redtape">
+              在立法會換屆選舉，每名選民有權同時在其所屬的地方選區及功能界別投票。區議會（第二）功能界別（即俗稱的「超
+              級區議會」功能界別）由沒有在其他傳統功能界別登記的地方選區選民組成。根據相關選舉法例，任何人士申請登記
+              為地方選區選民亦被視為申請在區議會（第二）功能界別中登記。若你選擇不登記為區議會（第二）功能界別的選民，
+              你 必須 填寫「更改功能界別選民及／或選舉委員會界別分組投票人個人登記資料／取消登記或不登記於區議會（第
+              二）功能界別申請表」（REO-43）。
+            </p>
           </div><!-- /.col-sm-9 -->
           <div class="col-sm-12">
             <p><button type="button" class="btn btn-primary nextButton">核對資料 (未完成，需要簽名並上載)</button></p>
@@ -259,10 +278,11 @@
         </div>
       </div>
 
-      <div class="step step-6 row">
+      <div class="step step-7 row">
         <div class="col-sm-12">
           <h3>六、睇清楚先</h3>
-          <p>在下一步驟下載檔案後，請開啟選舉事務處網站，選擇上載<span class="text-primary">Completed REO Form.png</span>、選取「我已簽署電子登記表格」、塡寫驗證碼、再按傳送。</p>
+          <p>在下一步驟下載檔案後，請開啟選舉事務處網站，選擇上載<span class="text-primary">Completed REO-2 Form.png</span>與地址證明、選取「我已簽署電子登記表格」、塡寫驗證碼、再按傳送。</p>
+          <p><img src="assets/uploader-2.png" alt="code"></p>
           <p>完成後，你會收到下圖所示的參考編號，請記低以便查詢跟進。</p>
           <p><img src="assets/finish.png" alt="code"></p>
           <p>如你在遞交表格 14 天後，仍未收到選舉事務處的通知，你可致電該處查詢熱線 2891 1001，查詢有關申請的進展。</p>
@@ -271,12 +291,12 @@
         </div>
       </div>
 
-      <div class="step step-7 checkout row">
+      <div class="step step-8 checkout row">
         <div class="col-sm-12">
           <h3>七、核對資料</h3>
           <div class="alert alert-success" role="alert"><p>請核對資料，並留意表格上的注意事項及聲明。</p></div>
           <canvas id="output-canvas"></canvas>
-          <img id="source-img" src="reo-1.png?20180327" style="display:none;" alt="source image loader">
+          <img id="source-img" src="reo-2.png?20180327" style="display:none;" alt="source image loader">
           <!--<p>請核對以上資料，並留意表格上的注意事項及聲明，然後選擇遞交方式。</p>-->
         </div>
         <div class="col-sm-9">
@@ -286,13 +306,18 @@
             (a) 上述住址是本人在香港的唯一或主要居所；及<br>
             (b) 本人符合登記成為地方選區選民的資格﹝附註 5﹞；及<br>
             (c) 本人並沒有喪失登記為選民的資格﹝附註 6﹞。<br>
+            本人同意並授權選舉登記主任在審核本人的選民登記資格時，將本人在申請表填報的個人資料，與其他機構為其他目的而向本人收集的
+            個人資料作比較和覆核，以核實有關資料是否真實及正確。如有任何失實或誤導的情況，選舉登記主任可根據這些資料對本人採取適當
+            行動。本人並明確地同意，有關政府部門（包括但不限於入境事務處、房屋署及民政事務總署）或其他公營／私營機構（包括但不限於
+            香港房屋協會），向選舉登記主任提供本人的個人資料，以便在處理本申請時，以及每年更新作選民登記及與選舉有關的記錄時，比較和
+            核實這些資料。［附註 13］
           </p>
           <p>簽名 Signature :</p>
           <canvas id="sign-area"></canvas>
           <p>請先以滑鼠用上方的手寫板在表格上簽名。 (<a href="#" class="resetSign">清除</a>)</p>
-          <div class="downloadAreaContainer"><img id="downloadArea" width="320" hright="200"></img></div>
+          <div class="downloadAreaContainer"><img id="downloadArea" width="320" height="200"></img></div>
           <p>
-            <a class="btn btn-lg btn-default downloadButton" id="downloadButton" download="Completed REO Form.png">1. 下載檔案</a>
+            <a class="btn btn-lg btn-default downloadButton" id="downloadButton" download="Completed REO-2 Form.png">1. 下載檔案</a>
             <a class="btn btn-lg btn-primary uploadPrimary" href="https://www.reo-form.gov.hk/eto/ch/upload_form_reo1.jsp" target="_blank">2. 再上載至選舉事務處網站</a>
           </p>
           <p>下載檔案後，開啟選舉事務處網站。你要選擇<br>上載<span class="text-primary">Completed REO Form.png</span>、<wbr>選取「我已簽署電子登記表格」、塡寫驗證碼、再按傳送。</p>
@@ -319,31 +344,35 @@
             Analytics
           </a>
         </li>
-        <li role="presentation" class="step-nav step-nav-1">
+        <li role="presentation" class="step-nav step-nav-1 sr-only">
+          <a href="#">
+            Address Proof
+          </a>
+        <li role="presentation" class="step-nav step-nav-2">
           <a href="#">中文姓名</a>
           <ul>
             <li class="nav-content"></li>
           </ul>
         </li>
-        <li role="presentation" class="step-nav step-nav-2">
+        <li role="presentation" class="step-nav step-nav-3">
           <a href="#">英文姓名</a>
           <ul>
             <li class="nav-content"></li>
           </ul>
         </li>
-        <li role="presentation" class="step-nav step-nav-3">
+        <li role="presentation" class="step-nav step-nav-4">
           <a href="#">身份證上其他資料</a>
           <ul>
             <li class="nav-content"></li>
           </ul>
         </li>
-        <li role="presentation" class="step-nav step-nav-4">
+        <li role="presentation" class="step-nav step-nav-5">
           <a href="#">住址</a>
           <ul>
             <li class="nav-content"></li>
           </ul>
         </li>
-        <li role="presentation" class="step-nav step-nav-5">
+        <li role="presentation" class="step-nav step-nav-6">
           <a href="#">
             聯絡資料及選項
           </a>
@@ -351,10 +380,10 @@
             <li class="nav-content"></li>
           </ul>
         </li>
-        <li role="presentation" class="step-nav step-nav-6">
+        <li role="presentation" class="step-nav step-nav-7">
           <a href="#">Notice</a>
         </li>
-        <li role="presentation" class="step-nav step-nav-7">
+        <li role="presentation" class="step-nav step-nav-8">
           <a href="#">Signature</a>
         </li>
       </ul>
@@ -375,6 +404,6 @@
   </div>
 </footer>
 <script async src="bootstrap/js/bootstrap.min.js"></script>
-<script async src="app.js"></script>
+<script async src="app-address-change.js"></script>
 </body>
 </html>

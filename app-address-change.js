@@ -69,26 +69,26 @@ voterRegistration.textPosition = [
 		],
 		"size": 28,
 	},
-	{"key":"address-flat", "position": [[160,520]], "size": 28, "align": "left"},
-	{"key":"address-floor", "position": [[460,520]], "size": 28, "align": "left"},
-	{"key":"address-block", "position": [[960,520]], "size": 28, "align": "left"},
-	{"key":"address-line0", "position": [[320,564]], "size": 28, "align": "left"},
-	{"key":"address-line1", "position": [[320,610]], "size": 28, "align": "left"},
-	{"key":"address-line2", "position": [[320,650]], "size": 28, "align": "left"},
-	{"key":"address-line3", "position": [[320,690]], "size": 28, "align": "left"},
-	{"key":"extra-landline", "position": [[190,735]], "size": 28, "align": "left"},
-	{"key":"extra-mobile", "position": [[730,735]] ,"size": 28, "align": "left"},
-	{"key":"extra-office", "position": [[190,775]], "size": 28, "align": "left"},
-	{"key":"extra-email", "position": [[190,815]], "size": 22, "align": "left"},
+	{"key":"address-flat", "position": [[160,510]], "size": 28, "align": "left"},
+	{"key":"address-floor", "position": [[460,510]], "size": 28, "align": "left"},
+	{"key":"address-block", "position": [[960,510]], "size": 28, "align": "left"},
+	{"key":"address-line0", "position": [[320,554]], "size": 28, "align": "left"},
+	{"key":"address-line1", "position": [[320,600]], "size": 28, "align": "left"},
+	{"key":"address-line2", "position": [[320,640]], "size": 28, "align": "left"},
+	{"key":"address-line3", "position": [[320,680]], "size": 28, "align": "left"},
+	{"key":"extra-landline", "position": [[190,725]], "size": 28, "align": "left"},
+	{"key":"extra-mobile", "position": [[730,725]] ,"size": 28, "align": "left"},
+	{"key":"extra-office", "position": [[190,765]], "size": 28, "align": "left"},
+	{"key":"extra-email", "position": [[190,805]], "size": 22, "align": "left"},
 	{"key":"extra-lang",
-		"position": [[536,1206],[690,1206]],
+		"position": [[536,1186],[690,1186]],
 		"size": 22,
 	},
 	{"key":"date",
 		"position": [
-			[425,1585],[458,1585],[490,1585],[515,1585],
-			[305,1585],[335,1585],
-			[185,1585],[215,1585],
+			[425,1545],[458,1545],[490,1545],[515,1545],
+			[305,1545],[335,1545],
+			[185,1545],[215,1545],
 		],
 		"size": 22,
 	},
@@ -178,10 +178,10 @@ voterRegistration.setStep = function(step){
 	var navtarget = $(".step-nav-container");
 	navtarget.removeClass("step-current-"+(step-1)).addClass("step-current-"+step);
 
-	$(".step-nav-1 .nav-content").text(voterRegistration.data["name-zh"]);
-	$(".step-nav-2 .nav-content").text(voterRegistration.data["name-en-surname"]+", "+voterRegistration.data["name-en-othername"]);
-	$(".step-nav-3 .nav-content").text(voterRegistration.data["idcard"]+", "+	$(".gender-btn.active .btn-text").text());
-	$(".step-nav-4 .nav-content").text(
+	$(".step-nav-2 .nav-content").text(voterRegistration.data["name-zh"]);
+	$(".step-nav-3 .nav-content").text(voterRegistration.data["name-en-surname"]+", "+voterRegistration.data["name-en-othername"]);
+	$(".step-nav-4 .nav-content").text(voterRegistration.data["idcard"]+", "+	$(".gender-btn.active .btn-text").text());
+	$(".step-nav-5 .nav-content").text(
 		voterRegistration.data["address-flat"]+" "+
 		voterRegistration.data["address-floor"]+" "+
 		voterRegistration.data["address-block"]+" "+
@@ -190,7 +190,7 @@ voterRegistration.setStep = function(step){
 		voterRegistration.data["address-line2"]+" "+
 		voterRegistration.data["address-line3"]
   );
-	$(".step-nav-5 .nav-content").text(
+	$(".step-nav-6 .nav-content").text(
 		voterRegistration.data["extra-landline"]+" "+
 		voterRegistration.data["extra-mobile"]+" "+
 		voterRegistration.data["extra-office"]+" "+
@@ -227,7 +227,7 @@ voterRegistration.generate = function(){
 voterRegistration.initSign = function(){
 	var canvas = voterRegistration.signarea;
 	var context = voterRegistration.signarea.getContext('2d');
-	canvas.height = 110;
+	canvas.height = 90;
 	canvas.width = 340;
 
 	context.drawsignature = function(x, y) {
@@ -306,7 +306,7 @@ voterRegistration.resetSign = function(){
 // mirror signature stokes to output canvas
 voterRegistration.sendSign = function(){
 	var target = voterRegistration.canvas.getContext('2d');
-	target.drawImage(voterRegistration.signarea, 780, 1480);
+	target.drawImage(voterRegistration.signarea, 780, 1510);
 }
 
 // convert output canvas to png data url
@@ -332,10 +332,10 @@ voterRegistration.insertTexts = function(context){
 		}
 		if (text.position.length > 1) {
 			for (var i = 0; i < text.position.length; i++) {
-				context.fillText(voterRegistration.data[text.key].charAt(i), text.position[i][0], text.position[i][1]);
+				context.fillText(voterRegistration.data[text.key].charAt(i), text.position[i][0], text.position[i][1]+50);
 			}
 		} else {
-			context.fillText(voterRegistration.data[text.key], text.position[0][0], text.position[0][1]);
+			context.fillText(voterRegistration.data[text.key], text.position[0][0], text.position[0][1]+50);
 		}
 	}
 }
