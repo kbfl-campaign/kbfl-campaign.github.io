@@ -1,0 +1,18 @@
+/* body */
+body{
+  padding-top: 70px;
+}
+
+/* navbar */
+.navbar-brand-logo {
+  position: fixed;
+  top: 0;
+}
+.navbar-brand-text {
+  margin-left: 65px;
+}
+@media (max-width: 768px) {
+  .navbar-brand-text {
+    display: none;
+  }
+}
