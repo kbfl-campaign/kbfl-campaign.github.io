@@ -109,6 +109,14 @@ p, .control-label {
   list-style-type: none;
 }
 
+/* iOS-intro */
+div.container.mainform.introPending, div.container.iOSintro {
+  display: none;
+}
+div.container.mainform, div.container.iOSintro.introPending {
+  display: block;
+}
+
 /* name-zh */
 .form-inline .form-control.name-telecode {
   width: 5em;
