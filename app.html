@@ -22,6 +22,17 @@
   <meta name="theme-color" content="#c91f37">
 
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script>
+    (function(){
+      const rules = [
+        'WebView',
+        '(iPhone|iPod|iPad)(?!.*Safari\/)',
+        'Android.*(wv|\.0\.0\.0)',
+      ];
+      const regex = new RegExp(`(${rules.join('|')})`, 'ig');
+      if (Boolean(navigator.userAgent.match(regex))) window.location.href = "https://kbfl-campaign.github.io/";
+    })();
+  </script>
   <script src="jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet">
   <link href="bootstrap/css/bootstrap-app.min.css" rel="stylesheet">
