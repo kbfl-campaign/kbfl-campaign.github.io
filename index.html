@@ -328,5 +328,16 @@
   src="https://www.facebook.com/tr?id=385851745371772&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
+<script>
+  (function(){
+    const rules = [
+      'WebView',
+      '(iPhone|iPod|iPad)(?!.*Safari\/)',
+      'Android.*(wv|\.0\.0\.0)',
+    ];
+    const regex = new RegExp(`(${rules.join('|')})`, 'ig');
+    if (Boolean(navigator.userAgent.match(regex))) document.querySelector(".btn#register").href = "webview.html";
+  })();
+</script>
 </body>
 </html>
